@@ -1,0 +1,257 @@
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+  height: 220px;
+}
+
+.imagesWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.backgroundDecoration {
+  position: absolute;
+  top: -8%;
+  left: -8%;
+  width: 116%;
+  height: 116%;
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(120, 119, 140, 0.15) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(140, 135, 125, 0.12) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(100, 100, 100, 0.08) 0%, transparent 70%),
+    linear-gradient(135deg,
+      rgba(180, 175, 170, 0.1) 0%,
+      rgba(150, 145, 155, 0.08) 25%,
+      rgba(130, 130, 135, 0.06) 50%,
+      rgba(155, 150, 145, 0.08) 75%,
+      rgba(170, 165, 175, 0.1) 100%);
+  border: 1px solid rgba(180, 175, 185, 0.15);
+  border-radius: 28%;
+  transform: rotate(-6deg);
+  z-index: 0;
+  transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow:
+    0 4px 30px rgba(100, 100, 110, 0.08),
+    0 8px 50px rgba(140, 135, 145, 0.05),
+    inset 0 0 40px rgba(200, 195, 205, 0.03);
+}
+
+/* Dark mode enhancements */
+:global([data-theme="dark"]) .backgroundDecoration {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(90, 85, 110, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(80, 75, 90, 0.15) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(60, 60, 70, 0.12) 0%, transparent 70%),
+    linear-gradient(135deg,
+      rgba(70, 65, 80, 0.15) 0%,
+      rgba(55, 50, 65, 0.12) 25%,
+      rgba(45, 45, 55, 0.1) 50%,
+      rgba(55, 50, 60, 0.12) 75%,
+      rgba(65, 60, 75, 0.15) 100%);
+  border-color: rgba(100, 95, 115, 0.2);
+  box-shadow:
+    0 4px 30px rgba(30, 30, 40, 0.15),
+    0 8px 50px rgba(50, 45, 60, 0.1),
+    inset 0 0 40px rgba(80, 75, 95, 0.05);
+}
+
+.imagesWrapper:hover~.backgroundDecoration {
+  transform: rotate(-8deg) scale(1.08);
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(130, 125, 150, 0.2) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(150, 145, 135, 0.16) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(110, 110, 115, 0.12) 0%, transparent 70%),
+    linear-gradient(135deg,
+      rgba(190, 185, 180, 0.14) 0%,
+      rgba(160, 155, 165, 0.11) 25%,
+      rgba(140, 140, 145, 0.09) 50%,
+      rgba(165, 160, 155, 0.11) 75%,
+      rgba(180, 175, 185, 0.14) 100%);
+  border-color: rgba(190, 185, 195, 0.2);
+  box-shadow:
+    0 6px 40px rgba(100, 100, 115, 0.12),
+    0 12px 60px rgba(145, 140, 150, 0.08),
+    inset 0 0 50px rgba(210, 205, 215, 0.05);
+}
+
+:global([data-theme="dark"]) .imagesWrapper:hover~.backgroundDecoration {
+  background:
+    radial-gradient(ellipse at 30% 20%, rgba(100, 95, 120, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, rgba(90, 85, 100, 0.2) 0%, transparent 45%),
+    radial-gradient(ellipse at 50% 50%, rgba(70, 70, 85, 0.16) 0%, transparent 70%),
+    linear-gradient(135deg,
+      rgba(80, 75, 95, 0.2) 0%,
+      rgba(65, 60, 80, 0.16) 25%,
+      rgba(55, 55, 70, 0.14) 50%,
+      rgba(65, 60, 75, 0.16) 75%,
+      rgba(75, 70, 90, 0.2) 100%);
+  border-color: rgba(110, 105, 130, 0.25);
+  box-shadow:
+    0 6px 40px rgba(40, 40, 55, 0.2),
+    0 12px 60px rgba(60, 55, 75, 0.15),
+    inset 0 0 50px rgba(90, 85, 110, 0.08);
+}
+
+.profileImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Squircle-ish shape */
+  border-radius: 24%;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: scale(0.95) rotate(0deg);
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+.profileImage.active {
+  opacity: 1;
+  transform: scale(1) rotate(0deg);
+  z-index: 2;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.switchButton {
+  position: absolute;
+  bottom: -20px;
+  right: -10px;
+  left: auto;
+  transform: none;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10;
+
+  /* Liquid glass effect */
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.25) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.15) 0%,
+      rgba(255, 255, 255, 0.05) 50%,
+      rgba(255, 255, 255, 0.1) 100%);
+  backdrop-filter: blur(20px) saturate(180%);
+  -webkit-backdrop-filter: blur(20px) saturate(180%);
+
+  /* Layered border for depth */
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  /* Multi-layer shadow for liquid depth */
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    0 8px 32px rgba(0, 0, 0, 0.06),
+    inset 0 1px 1px rgba(255, 255, 255, 0.3),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05);
+
+  transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Dark mode adjustments */
+:global([data-theme="dark"]) .switchButton {
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.12) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(255, 255, 255, 0.04) 0%, transparent 50%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.02) 50%,
+      rgba(255, 255, 255, 0.05) 100%);
+  border-color: rgba(255, 255, 255, 0.12);
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.2),
+    0 8px 32px rgba(0, 0, 0, 0.15),
+    inset 0 1px 1px rgba(255, 255, 255, 0.1),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.switchButton:hover {
+  transform: scale(1.15) rotate(15deg);
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.35) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(255, 255, 255, 0.15) 0%, transparent 50%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.25) 0%,
+      rgba(255, 255, 255, 0.1) 50%,
+      rgba(255, 255, 255, 0.18) 100%);
+  border-color: rgba(255, 255, 255, 0.4);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.12),
+    0 16px 48px rgba(0, 0, 0, 0.08),
+    0 0 20px rgba(var(--accent-rgb, 99, 102, 241), 0.15),
+    inset 0 1px 2px rgba(255, 255, 255, 0.4),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.05);
+}
+
+:global([data-theme="dark"]) .switchButton:hover {
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(255, 255, 255, 0.18) 0%, transparent 50%),
+    radial-gradient(ellipse at 70% 70%, rgba(255, 255, 255, 0.08) 0%, transparent 50%),
+    linear-gradient(135deg,
+      rgba(255, 255, 255, 0.12) 0%,
+      rgba(255, 255, 255, 0.04) 50%,
+      rgba(255, 255, 255, 0.08) 100%);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow:
+    0 8px 24px rgba(0, 0, 0, 0.25),
+    0 16px 48px rgba(0, 0, 0, 0.2),
+    0 0 25px rgba(var(--accent-rgb, 99, 102, 241), 0.2),
+    inset 0 1px 2px rgba(255, 255, 255, 0.15),
+    inset 0 -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.switchButton:active {
+  transform: scale(0.92);
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.1),
+    0 4px 16px rgba(0, 0, 0, 0.08),
+    inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.1s ease;
+}
+
+.switchButton svg {
+  width: 24px;
+  height: 24px;
+  color: var(--text-primary);
+  transition: all 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.switchButton:hover svg {
+  transform: rotate(180deg) scale(1.1);
+  color: var(--accent-primary);
+  filter: drop-shadow(0 2px 4px rgba(var(--accent-rgb, 99, 102, 241), 0.3));
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .imageContainer {
+    width: 180px;
+    height: 180px;
+  }
+
+  .switchButton {
+    width: 40px;
+    height: 40px;
+    bottom: -10px;
+    right: -5px;
+  }
+
+  .switchButton svg {
+    width: 18px;
+    height: 18px;
+  }
+}

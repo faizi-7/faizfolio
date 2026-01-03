@@ -1,0 +1,256 @@
+[
+  {
+    "id": 28,
+    "title": "The Brothers Karamazov",
+    "author": "Fyodor Dostoevsky",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/theBrothersKaramazov.jpg"
+  },
+  {
+    "id": 1,
+    "title": "Catch-22",
+    "author": "Joseph Heller",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/catch22.jpeg"
+  },
+  {
+    "id": 2,
+    "title": "Hyperion",
+    "author": "Dan Simmons",
+    "year": 2025,
+    "status": "pending",
+    "cover": "/books/hyperion.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Man's Search for Meaning",
+    "author": "Viktor Frankl",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/manSearchMeaning.jpg",
+    "favoriteQuote": "Everything can be taken from a man but one thing: the last of the human freedoms—to choose one's attitude in any given set of circumstances.",
+    "faizReview": "Its a good book but its kinda depressing which is expected , the raw human characters are shown but the life lessons are already told many times in other books, so not that impactful for me."
+  },
+  {
+    "id": 4,
+    "title": "The Bed of Procrustes",
+    "author": "Nassim Nicholas Taleb",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/bedOfProcrustes.jpg",
+    "favoriteQuote": "The three most harmful addictions are heroin, carbohydrates, and a monthly salary.",
+    "faizReview": "Amazing thoughts and that defies conventional wisdom. Though his proper books are better since its direct to the lessons."
+  },
+  {
+    "id": 5,
+    "title": "When Breath Becomes Air",
+    "author": "Paul Kalanithi",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/whenBreathBecomes.jpg",
+    "favoriteQuote": "Even if I’m dying, until I actually die, I am still living.",
+    "faizReview": "Good book but not that great , author tries too hard to be philosophical which sometimes feels forced. Though the i got to know a lot about doctors with this book"
+  },
+  {
+    "id": 6,
+    "title": "Sapiens",
+    "author": "Yuval Noah Harari",
+    "year": 2021,
+    "status": "read",
+    "cover": "/books/sapiens.jpg",
+    "favoriteQuote": "You could never convince a monkey to give you a banana by promising him limitless bananas after death in monkey heaven.",
+    "faizReview": "It shatters many faiths and beliefs and changes how i see the world. But he is a bit too pessimistic about the future of humanity, and makes up a lot of things. But overall its a great book."
+  },
+  {
+    "id": 7,
+    "title": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "year": 2025,
+    "status": "read",
+    "cover": "/books/hitchhikersGuide.jpg",
+    "favoriteQuote": "The answer to the ultimate question of life, the universe, and everything is 42.",
+    "faizReview": "My favorite book currently, its amazing and it obviously increases my sense of humour. Humour and Philosophy are combined in a way that makes you laugh and think at the same time. The absurdity of life is captured perfectly."
+  },
+  {
+    "id": 8,
+    "title": "Understanding Comics",
+    "author": "Scott McCloud",
+    "year": 2021,
+    "cover": "/books/understandingComics.jpg",
+    "favoriteQuote": "Comics is a medium where the reader is a willing and conscious collaborator and closure is the agent of change, time and motion.",
+    "faizReview": "Eye-opening exploration of visual storytelling. Changed how I think about communication and design."
+  },
+  {
+    "id": 9,
+    "title": "East of Eden",
+    "author": "John Steinbeck",
+    "year": 2025,
+    "cover": "/books/eastOfEden.jpg",
+    "favoriteQuote": "And now that you don’t have to be perfect, you can be good.",
+    "faizReview": "It consists of all types of human characters, its so so well written, i read it continuously for 4 days, its contains love, guilt, sin. My favorite character was Samuel Hamilton."
+  },
+  {
+    "id": 10,
+    "title": "The Prophet",
+    "author": "Kahlil Gibran",
+    "year": 2024,
+    "cover": "/books/theProphet.jpg",
+    "favoriteQuote": "Your pain is the breaking of the shell that encloses your understanding.",
+    "faizReview": "Timeless poetry and wisdom. Gibran's words on love, work, and life resonate across cultures and generations."
+  },
+  {
+    "id": 11,
+    "title": "Antifragile",
+    "author": "Nassim Nicholas Taleb",
+    "year": 2024,
+    "cover": "/books/antifragile.jpeg",
+    "favoriteQuote": "Some things benefit from shocks; they thrive and grow when exposed to volatility, randomness, disorder, and stressors.",
+    "faizReview": "Revolutionary concept that changed how I think about uncertainty and resilience. Taleb's insights are profound."
+  },
+  {
+    "id": 12,
+    "title": "The Almanack of Naval Ravikant",
+    "author": "Eric Jorgenson",
+    "year": 2024,
+    "cover": "/books/theAlmanack.jpg",
+    "favoriteQuote": "Seek wealth, not money or status. Wealth is having assets that earn while you sleep.",
+    "faizReview": "Distilled wisdom on wealth and happiness. Naval's insights are practical and philosophically deep."
+  },
+  {
+    "id": 13,
+    "title": "The Courage to Be Disliked",
+    "author": "Ichiro Kishimi & Fumitake Koga",
+    "year": 2024,
+    "cover": "/books/theCourageTobeDisliked.jpg",
+    "favoriteQuote": "The courage to be happy also includes the courage to be disliked.",
+    "faizReview": "Eye-opening exploration of Adlerian psychology. Challenges conventional thinking about relationships and self-worth."
+  },
+  {
+    "id": 14,
+    "title": "The Prince",
+    "author": "Niccolò Machiavelli",
+    "year": 2024,
+    "cover": "/books/thePrince.jpg",
+    "favoriteQuote": "It is better to be feared than loved, if you cannot be both.",
+    "faizReview": "Timeless political philosophy. Machiavelli's pragmatic approach to power and leadership remains relevant."
+  },
+  {
+    "id": 15,
+    "title": "Refactoring UI",
+    "author": "Adam Wathan & Steve Schoger",
+    "year": 2024,
+    "cover": "/books/refactoringUi.jpg",
+    "favoriteQuote": "Good design is less about learning to be a great artist and more about developing an eye for spotting problems and knowing how to fix them.",
+    "faizReview": "Game-changer for developers. Practical design wisdom that instantly elevates the quality of any UI you build."
+  },
+  {
+    "id": 16,
+    "title": "The Book of Secrets",
+    "author": "Deepak Chopra",
+    "year": 2023,
+    "cover": "/books/theBookOfSecrets.jpg",
+    "favoriteQuote": "The secret of health for both mind and body is not to mourn for the past, worry about the future, but to live in the present moment wisely and earnestly.",
+    "faizReview": "Spiritual insights that bridge ancient wisdom and modern understanding. Chopra's approach to consciousness is thought-provoking."
+  },
+  {
+    "id": 17,
+    "title": "Homo Deus",
+    "author": "Yuval Noah Harari",
+    "year": 2022,
+    "cover": "/books/HomoDeus.png",
+    "favoriteQuote": "History began when humans invented gods, and will end when humans become gods.",
+    "faizReview": "Bold exploration of humanity's future. Harari's vision of where technology and biology intersect is both fascinating and cautionary."
+  },
+  {
+    "id": 18,
+    "title": "Show Your Work!",
+    "author": "Austin Kleon",
+    "year": 2021,
+    "cover": "/books/showYourWork.jpg",
+    "favoriteQuote": "Don't worry about people stealing your ideas. If your ideas are any good, you'll have to ram them down people's throats.",
+    "faizReview": "Perfect companion to creative work. Kleon makes sharing your process feel natural and necessary."
+  },
+  {
+    "id": 19,
+    "title": "The Psychology of Money",
+    "author": "Morgan Housel",
+    "year": 2021,
+    "cover": "/books/psychologyMoney.jpg",
+    "favoriteQuote": "Your personal experiences with money make up maybe 0.00000001% of what's happened in the world, but maybe 80% of how you think the world works.",
+    "faizReview": "Brilliant insights into financial behavior. More about human psychology than money itself."
+  },
+  {
+    "id": 20,
+    "title": "Storyworthy",
+    "author": "Matthew Dicks",
+    "year": 2021,
+    "cover": "/books/storyworthy.jpg",
+    "favoriteQuote": "Every story must contain a five-second moment of meaningful change.",
+    "faizReview": "Masterclass in storytelling. Dicks breaks down the art of compelling narratives beautifully."
+  },
+  {
+    "id": 21,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "year": 2021,
+    "cover": "/books/theAlchemist.jpg",
+    "favoriteQuote": "And, when you want something, all the universe conspires in helping you to achieve it.",
+    "faizReview": "A timeless fable about following your dreams. Simple yet profound wisdom about life's journey."
+  },
+  {
+    "id": 22,
+    "title": "Rich Dad Poor Dad",
+    "author": "Robert Kiyosaki",
+    "year": 2021,
+    "cover": "/books/richDadPoorDad.jpg",
+    "favoriteQuote": "The poor and middle class work for money. The rich have money work for them.",
+    "faizReview": "Shifted my perspective on money and investing. Not perfect, but contains valuable mindset changes."
+  },
+  {
+    "id": 23,
+    "title": "Think and Grow Rich",
+    "author": "Napoleon Hill",
+    "year": 2021,
+    "cover": "/books/thinkAndGrowRich.jpg",
+    "favoriteQuote": "Whatever the mind can conceive and believe, it can achieve.",
+    "faizReview": "Classic self-help that still holds up. Hill's principles about success and mindset are timeless."
+  },
+  {
+    "id": 24,
+    "title": "How to Win Friends and Influence People",
+    "author": "Dale Carnegie",
+    "year": 2021,
+    "cover": "/books/howToWinFriends.jpg",
+    "favoriteQuote": "You can make more friends in two months by becoming interested in other people than you can in two years by trying to get other people interested in you.",
+    "faizReview": "Essential people skills manual. Carnegie's advice is as relevant today as it was decades ago."
+  },
+  {
+    "id": 25,
+    "title": "The Subtle Art of Not Giving a F*ck",
+    "author": "Mark Manson",
+    "year": 2021,
+    "cover": "/books/subtleArtFk.jpg",
+    "favoriteQuote": "You and everyone you know are going to be dead soon. And in the short amount of time between here and there, you have a limited amount of fucks to give.",
+    "faizReview": "Refreshingly honest take on self-help. Manson cuts through the BS with humor and wisdom."
+  },
+  {
+    "id": 26,
+    "title": "The Animator's Survival Kit",
+    "author": "Richard Williams",
+    "year": 2021,
+    "cover": "/books/animatorsSurvivalKit.jpg",
+    "favoriteQuote": "Animation is not the art of drawings that move but the art of movements that are drawn.",
+    "faizReview": "The bible of animation. Williams breaks down movement in ways that apply beyond animation."
+  },
+  {
+    "id": 27,
+    "title": "Figure Drawing for All It's Worth",
+    "author": "Andrew Loomis",
+    "year": 2021,
+    "cover": "/books/figureDrawing.jpg",
+    "favoriteQuote": "The best way to learn to draw is to draw, draw, draw.",
+    "faizReview": "Loomis is the master of figure drawing. Technical excellence made accessible and inspiring."
+  }
+]

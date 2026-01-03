@@ -1,0 +1,54 @@
+{
+    "defaults": {
+        "titleTemplate": "%s - Faiz Iqbal",
+        "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination.",
+        "keywords": [
+            "Faiz Iqbal",
+            "software engineer",
+            "web developer",
+            "digital creative",
+            "portfolio",
+            "react",
+            "javascript",
+            "frontend developer",
+            "UI/UX design"
+        ],
+        "image": "/images/profile.jpg",
+        "type": "website"
+    },
+    "pages": {
+        "home": {
+            "title": "Faiz Iqbal - Software Engineer & Digital Creative",
+            "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination."
+        },
+        "writings": {
+            "title": "Writings",
+            "description": "Explore my thoughts on design, development, technology, and digital creativity. Insights from a software engineer's perspective on building better digital experiences.",
+            "keywords": [
+                "writings",
+                "blog",
+                "articles",
+                "design",
+                "development",
+                "technology",
+                "software engineering",
+                "digital creativity",
+                "web development"
+            ]
+        },
+        "connect": {
+            "title": "Connect",
+            "description": "Let's build something together! Connect with me on social media, GitHub, or send me an email. I'm always interested in collaborating on interesting projects.",
+            "keywords": [
+                "contact",
+                "connect",
+                "collaboration",
+                "social media",
+                "github",
+                "email",
+                "networking",
+                "software engineer contact"
+            ]
+        }
+    }
+}

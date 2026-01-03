@@ -1,0 +1,28 @@
+.loaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    width: 100%;
+}
+
+.loader {
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top-color: var(--accent-color);
+    animation: spin 1s ease-in-out infinite;
+}
+
+/* Dark mode adjustment for the track color */
+:global([data-theme="dark"]) .loader {
+    border-color: rgba(255, 255, 255, 0.1);
+    border-top-color: var(--accent-color);
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}

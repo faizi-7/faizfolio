@@ -1,0 +1,80 @@
+[
+  {
+    "id": 2,
+    "text": "Simplicity is the ultimate sophistication.",
+    "author": "Leonardo da Vinci",
+    "source": "Art and Design"
+  },
+  {
+    "id": 4,
+    "text": "Don't panic.",
+    "author": "Douglas Adams",
+    "source": "The Hitchhiker's Guide to the Galaxy"
+  },
+  {
+    "id": 5,
+    "text": "The real question is not whether machines think but whether men do.",
+    "author": "Douglas Adams",
+    "source": "The Hitchhiker's Guide to the Galaxy"
+  },
+  {
+    "id": 6,
+    "text": "Above all, don’t lie to yourself. The man who lies to himself and listens to his own lie comes to a point where he cannot distinguish the truth within him.",
+    "author": "Fyodor Dostoevsky",
+    "source": "The Brothers Karamazov"
+  },
+  {
+    "id": 7,
+    "text": "We study history not to predict the future, but to free ourselves of the past and imagine alternative destinies.",
+    "author": "Yuval Noah Harari",
+    "source": "Sapiens"
+  },
+  {
+    "id": 8,
+    "text": "Wind extinguishes a candle and energizes fire. Likewise with randomness, uncertainty, chaos: you want to use them, not hide from them.",
+    "author": "Nassim Nicholas Taleb",
+    "source": "Antifragile"
+  },
+  {
+    "id": 9,
+    "text": "The fragile wants tranquility, the antifragile grows from disorder, and the robust doesn't care too much.",
+    "author": "Nassim Nicholas Taleb",
+    "source": "Antifragile"
+  },
+  {
+    "id": 10,
+    "text": "And now that you don't have to be perfect, you can be good.",
+    "author": "John Steinbeck",
+    "source": "East of Eden"
+  },
+  {
+    "id": 11,
+    "text": "I believe that there is one story in the world, and only one... Humans are caught—in their lives, in their thoughts, in their hungers and ambitions, in their avarice and cruelty, and in their kindness and generosity too—in a net of good and evil.",
+    "author": "John Steinbeck",
+    "source": "East of Eden"
+  },
+  {
+    "id": 12,
+    "text": "What does not kill me, makes me stronger.",
+    "author": "Friedrich Nietzsche",
+    "source": "Twilight of the Idols"
+  },
+  {
+    "id": 13,
+    "text": "He who has a why to live can bear almost any how.",
+    "author": "Friedrich Nietzsche",
+    "source": "Twilight of the Idols"
+  },
+  {
+    "id": 14,
+    "text": "One must have chaos within oneself to give birth to a dancing star.",
+    "author": "Friedrich Nietzsche",
+    "source": "Thus Spoke Zarathustra"
+  },
+  {
+    "id": 15,
+    "text": "The individual has always had to struggle not to be overwhelmed by the tribe. If you try it, you will be lonely often, and sometimes frightened. But no price is too high to pay for the privilege of owning yourself.",
+    "author": "Friedrich Nietzsche",
+    "source": "Philosophy"
+  }
+]

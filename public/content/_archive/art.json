@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Personal Caricature",
+    "category": "digital art",
+    "image": "https://res.cloudinary.com/dhi0av50m/image/upload/v1751602837/Art/profile_bjbfhy.png"
+  },
+  {
+    "id": 2,
+    "title": "Skeleton Character Design",
+    "category": "digital art",
+    "image": "https://res.cloudinary.com/dhi0av50m/image/upload/v1751607024/Art/character_1_s1qcre.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Mobile Finger Name Art",
+    "category": "digital art",
+    "image": "https://res.cloudinary.com/dhi0av50m/image/upload/v1751607195/Art/My_LOGO_fs3x8x.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Digital Art with Penman",
+    "category": "digital art",
+    "image": "https://res.cloudinary.com/dhi0av50m/image/upload/v1751607382/Art/Misc_edqr3r.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Goat with Mosque in the Horn",
+    "category": "digital art",
+    "image": "https://res.cloudinary.com/dhi0av50m/image/upload/v1751607559/Art/goat_q3xdci.jpg"
+  }
+]

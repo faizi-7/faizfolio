@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "path": "/",
+            "label": "Home",
+            "icon": "HiHome"
+        },
+        {
+            "path": "/writings",
+            "label": "Writings",
+            "icon": "HiPencilAlt"
+        },
+        {
+            "path": "/connect",
+            "label": "Connect",
+            "icon": "HiMail"
+        }
+    ]
+}

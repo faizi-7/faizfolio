@@ -1,0 +1,51 @@
+[
+  {
+    "title": "System Engineer",
+    "company": "Tata Consultancy Services, Noida",
+    "period": "Jan 2025 - Present",
+    "points": [
+      "Assisted in building data pipelines using AWS Glue, Lambda, and S3 for automating ETL tasks.",
+      "Supported dbt model development for transforming and organizing data in Snowflake.",
+      "Helped maintain data quality using tests and Jinja macros in dbt."
+    ]
+  },
+  {
+    "title": "Full Stack Developer",
+    "company": "Waizcom, Remote",
+    "period": "Jun 2024 - Jan 2025",
+    "points": [
+      "Developed the complete backend for a B2B eCommerce platform using Node.js, Express, and MongoDB.",
+      "Designed and implemented multi-role architecture for buyers, sellers, super admin, and employees.",
+      "Built features like product management, subscription plans, order flows, and user onboarding with secure APIs.",
+      "Deployed the platform with production-ready hosting, applying best practices for scalability, performance, and reliability."
+    ]
+  },
+  {
+    "title": "Freelance UI Designer",
+    "company": "Self-employed",
+    "period": "Jan 2024 - Dec 2024",
+    "points": [
+      "Designed user interfaces for multiple clients using Figma, for businesses like clinics, laundry services, NGOs, and B2B platforms.",
+      "Created clean, responsive UI layouts with a strong focus on usability and user experience.",
+      "Delivered end-to-end design solutions including wireframes, mockups, and developer handoff assets."
+    ]
+  },
+  {
+    "title": "Software Developer Intern",
+    "company": "Exatorial, Remote",
+    "period": "Oct 2024 - Dec 2024",
+    "points": [
+      "Designed and developed components for exatorial project management systems",
+      "Worked on inventory management system using React & improved UI/UX for inventory applications."
+    ]
+  },
+  {
+    "title": "Frontend Developer",
+    "company": "GDSC JMI, Volunteer",
+    "period": "Dec 2022 - Jun 2023",
+    "points": [
+      "Created responsive websites and user interfaces",
+      "Implemented modern CSS Grid and Flexbox layouts"
+    ]
+  }
+]

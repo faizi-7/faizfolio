@@ -1,0 +1,46 @@
+{
+    "links": [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/faizi-7",
+            "icon": "github",
+            "showInFooter": true,
+            "showInConnect": true
+        },
+        {
+            "name": "X (Twitter)",
+            "url": "https://x.com/ifaiz710",
+            "icon": "twitter",
+            "showInFooter": true,
+            "showInConnect": true
+        },
+        {
+            "name": "Instagram",
+            "url": "https://www.instagram.com/faiz_iqbal7",
+            "icon": "instagram",
+            "showInFooter": false,
+            "showInConnect": true
+        },
+        {
+            "name": "YouTube",
+            "url": "https://www.youtube.com/@faizxcreates",
+            "icon": "youtube",
+            "showInFooter": false,
+            "showInConnect": true
+        },
+        {
+            "name": "LinkedIn",
+            "url": "https://www.linkedin.com/in/ifaiz7/",
+            "icon": "linkedin",
+            "showInFooter": true,
+            "showInConnect": true
+        },
+        {
+            "name": "Email",
+            "url": "mailto:faiziqbal733@gmail.com",
+            "icon": "email",
+            "showInFooter": true,
+            "showInConnect": true
+        }
+    ]
+}

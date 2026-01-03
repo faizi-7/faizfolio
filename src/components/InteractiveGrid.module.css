@@ -1,0 +1,237 @@
+.gridContainer {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* Base grid pattern using CSS gradients */
+.gridPattern {
+    position: absolute;
+    inset: 0;
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--accent-color), transparent 90%) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 90%) 1px, transparent 1px);
+    background-size: 60px 60px;
+    /* Fade from top (visible) to bottom (transparent) - starting fade earlier */
+    mask-image: linear-gradient(to bottom, black 5%, transparent 90%);
+    -webkit-mask-image: linear-gradient(to bottom, black 5%, transparent 90%);
+    opacity: 1;
+    /* Increased from 0.8 */
+    animation: breathe 8s ease-in-out infinite alternate;
+}
+
+@keyframes breathe {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.filledSquare {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: var(--accent-color);
+    opacity: 0;
+    transition: opacity 1s ease;
+    animation: pulse 4s infinite alternate;
+    will-change: opacity, transform;
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.05;
+        transform: scale(0.95);
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: scale(1.05);
+    }
+}
+
+/* Higher opacity for Dark Mode */
+[data-theme="dark"] .filledSquare {
+    animation: pulseDark 5s infinite alternate;
+}
+
+@keyframes pulseDark {
+    0% {
+        opacity: 0.1;
+        transform: scale(0.95);
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        opacity: 0.15;
+        transform: scale(1.05);
+    }
+}
+
+/* Add small dots at grid intersections */
+.gridPattern::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    /* Aligned to intersections (half of 60px) */
+    background-position: 30px 30px;
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.08) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(ellipse 70% 50% at 50% 40%, black 10%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 50% at 50% 40%, black 10%, transparent 70%);
+}
+
+/* Interactive spotlight effect */
+.spotlight {
+    --mouse-x: 50vw;
+    --mouse-y: 50vh;
+
+    position: fixed;
+    inset: 0;
+    /* Made much more subtle (98% transparent) */
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            color-mix(in srgb, var(--accent-color), transparent 98%),
+            transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+/* Show spotlight when mouse enters viewport */
+.gridContainer:hover .spotlight,
+.spotlight {
+    opacity: 1;
+}
+
+/* Grid glow effect at cursor position */
+.spotlight::before {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* Made lines very subtle (92% -> 96% transparent) */
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--accent-color), transparent 96%) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 96%) 1px, transparent 1px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(350px circle at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            transparent 60%);
+    -webkit-mask-image: radial-gradient(350px circle at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            transparent 60%);
+    opacity: 1;
+}
+
+/* Glowing dots at intersections on hover */
+.spotlight::after {
+    content: '';
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* Made dots more subtle (85% -> 90% transparent) and aligned */
+    background-position: 30px 30px;
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 90%) 1.5px, transparent 1.5px);
+    background-size: 60px 60px;
+    mask-image: radial-gradient(250px circle at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            transparent 50%);
+    -webkit-mask-image: radial-gradient(250px circle at var(--mouse-x) var(--mouse-y),
+            black 0%,
+            transparent 50%);
+}
+
+/* Gradient overlay for smooth edges */
+.gradientOverlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(to bottom, var(--background-primary) 0%, transparent 8%),
+        linear-gradient(to top, var(--background-primary) 0%, transparent 15%),
+        linear-gradient(to left, var(--background-primary) 0%, transparent 10%),
+        linear-gradient(to right, var(--background-primary) 0%, transparent 10%);
+    pointer-events: none;
+}
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+    .gridPattern {
+        background-image:
+            linear-gradient(color-mix(in srgb, var(--accent-color), transparent 90%) 1px, transparent 1px),
+            linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 90%) 1px, transparent 1px);
+    }
+}
+
+[data-theme="dark"] .gridPattern {
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--accent-color), transparent 60%) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 60%) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .gridPattern::before {
+    background-image: radial-gradient(circle, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .spotlight {
+    background: radial-gradient(600px circle at var(--mouse-x) var(--mouse-y),
+            color-mix(in srgb, var(--accent-color), transparent 97%),
+            transparent 40%);
+}
+
+[data-theme="dark"] .spotlight::before {
+    background-image:
+        linear-gradient(color-mix(in srgb, var(--accent-color), transparent 94%) 1px, transparent 1px),
+        linear-gradient(90deg, color-mix(in srgb, var(--accent-color), transparent 94%) 1px, transparent 1px);
+}
+
+[data-theme="dark"] .spotlight::after {
+    background-image: radial-gradient(circle, color-mix(in srgb, var(--accent-color), transparent 85%) 1.5px, transparent 1.5px);
+}
+
+/* Mobile: Show static subtle grid without spotlight interaction */
+@media (max-width: 768px) {
+    .filledSquare {
+        width: 40px;
+        height: 40px;
+    }
+
+    .spotlight {
+        background: radial-gradient(ellipse 100% 80% at 50% 30%,
+                color-mix(in srgb, var(--accent-color), transparent 96%),
+                transparent 60%);
+    }
+
+    .spotlight::before,
+    .spotlight::after {
+        display: none;
+    }
+
+    .gridPattern {
+        background-size: 40px 40px;
+        opacity: 0.5;
+    }
+
+    .gridPattern::before {
+        background-size: 40px 40px;
+        /* Align dots for mobile size (half of 40px) */
+        background-position: 20px 20px;
+    }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .spotlight {
+        transition: none;
+    }
+}

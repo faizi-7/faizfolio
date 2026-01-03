@@ -1,0 +1,78 @@
+{
+    "name": "Faiz Iqbal",
+    "headline": "Software Engineer & Digital Creative",
+    "hero": {
+        "greeting": {
+            "prefix": "Hey, I'm",
+            "name": "Faiz Iqbal"
+        },
+        "tagline": "I never could get the hang of <b>Mondays</b>.",
+        "bio": {
+            "intro": "I build things with",
+            "skills": [
+                "code",
+                "words",
+                "pixels"
+            ],
+            "middle": "and pretend it all makes sense. It doesn't. But it",
+            "highlights": [
+                "looks good",
+                "runs fast",
+                "solves real problems"
+            ],
+            "ending": "."
+        }
+    },
+    "sections": {
+        "experience": {
+            "title": "Experience",
+            "icon": "/assets/icons/experience.svg"
+        },
+        "projects": {
+            "title": "Selected Projects",
+            "icon": "/assets/icons/projects.svg",
+            "categories": {
+                "freelance": "Freelance Work",
+                "personal": "Personal Projects"
+            }
+        },
+        "education": {
+            "title": "Education",
+            "icon": "/assets/icons/education.svg"
+        },
+        "reflections": {
+            "title": "Reflections",
+            "icon": "/assets/icons/reflections.svg"
+        }
+    },
+    "footer": {
+        "showTime": true,
+        "timeMessage": "It's {time} in India. Thanks for stopping by.",
+        "copyrightText": "© {year} {name}",
+        "credit": {
+            "text": "Designed & Developed by",
+            "author": "Faiz Iqbal",
+            "url": "https://ifaiz.in"
+        }
+    },
+    "timezone": "Asia/Kolkata",
+    "location": "India",
+    "email": "faiziqbal733@gmail.com",
+    "resumePath": "/resume.pdf",
+    "images": {
+        "profile": "/images/profile.jpg",
+        "logo": "/images/arabic_logo.png",
+        "accentLine": "/assets/sribbles/line.svg"
+    },
+    "seo": {
+        "title": "Faiz Iqbal - Software Engineer & Digital Creative",
+        "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination.",
+        "keywords": [
+            "Faiz Iqbal",
+            "software engineer",
+            "web developer",
+            "digital creative",
+            "portfolio"
+        ]
+    }
+}

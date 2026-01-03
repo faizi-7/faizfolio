@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Important pages
+Allow: /writings
+Allow: /books
+Allow: /art
+Allow: /videos
+Allow: /connect
+
+# Allow content files that might be needed
+Allow: /public/content/*.json
+
+# Sitemap
+Sitemap: https://ifaiz.in/sitemap.xml
+
+# Google Search Console Verification
+google-site-verification=JxhOWViK-x7z6N_gAGeHF0CA35Bw_g863y56jwMuzxI
+
+# Crawl-delay for politeness
+Crawl-delay: 1
+
+# Block sensitive files (if any)
+Disallow: /private/
+Disallow: /src/
+Disallow: /node_modules/
