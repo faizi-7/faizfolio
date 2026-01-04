@@ -148,6 +148,7 @@
   align-items: center;
   gap: 0.5rem;
   z-index: 1001;
+  flex-shrink: 0;
 }
 
 /* Theme Toggle */
@@ -165,6 +166,8 @@
   transition: all 0.3s ease;
   overflow: hidden;
   box-shadow: var(--glass-shadow);
+  border: 1px solid var(--border-color);
+  flex-shrink: 0;
 }
 
 .themeToggle:hover {
@@ -231,12 +234,13 @@
   justify-content: center;
   width: clamp(36px, 32px + 1vw, 40px);
   height: clamp(36px, 32px + 1vw, 40px);
-  border: none;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   background: var(--background-secondary);
   color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s ease;
+  flex-shrink: 0;
 }
 
 .mobileMenuToggle:hover {
@@ -290,13 +294,16 @@
     margin: 0;
     gap: 0.5rem;
     transform: translateX(100%);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.3s linear;
     z-index: 1000;
     border-left: 1px solid var(--border-color);
+    visibility: hidden;
   }
 
   .navList.mobileOpen {
     transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 0s linear;
   }
 
   .navItem {
