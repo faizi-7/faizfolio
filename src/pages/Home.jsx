@@ -125,14 +125,14 @@ const Home = () => {
 
   return (
     <>
-      <SEO
+      {/* <SEO
         title={seo?.title || "Portfolio"}
         description={seo?.description || ""}
         keywords={seo?.keywords?.join(", ") || ""}
         image={images?.profile || "/images/profile.jpg"}
         type="website"
         structuredData={generateStructuredData.person()}
-      />
+      /> */}
       <InteractiveGrid />
       <div className={`${styles.home} ${isVisible ? "fade-in" : ""}`}>
         <section className={styles.hero}>

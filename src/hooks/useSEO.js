@@ -56,12 +56,12 @@ export const useSEO = (seoData = {}) => {
 
     updateMetaTag('description', seo.description)
     updateMetaTag('keywords', seo.keywords)
-    updateMetaTag('author', 'Faiz Iqbal')
+    updateMetaTag('author', 'Sahil Nesar')
     updateMetaTag('robots', 'index, follow')
 
     updateMetaTag('og:title', seo.title, true)
     updateMetaTag('og:description', seo.description, true)
-    updateMetaTag('og:image', `https://ifaiz.in${seo.image}`, true)
+    updateMetaTag('og:image', `${window.location.origin}${seo.image}`, true)
     updateMetaTag('og:url', seo.url, true)
     updateMetaTag('og:type', seo.type, true)
     updateMetaTag('og:site_name', seo.site_name, true)
@@ -70,8 +70,8 @@ export const useSEO = (seoData = {}) => {
     updateMetaTag('twitter:card', 'summary_large_image')
     updateMetaTag('twitter:title', seo.title)
     updateMetaTag('twitter:description', seo.description)
-    updateMetaTag('twitter:image', `https://ifaiz.in${seo.image}`)
-    updateMetaTag('twitter:creator', '@ifaiz710')
+    updateMetaTag('twitter:image', `${window.location.origin}${seo.image}`)
+    // updateMetaTag('twitter:creator', '@')
 
     updateCanonicalUrl(seo.url)
 
@@ -96,7 +96,7 @@ export const generateStructuredData = {
   person: () => ({
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Your Name",
+    "name": "Sahil Nesar",
     "jobTitle": "Job Title",
     "description": "Short bio",
     "url": window.location.origin,
@@ -111,7 +111,7 @@ export const generateStructuredData = {
     "description": "My Portfolio",
     "author": {
       "@type": "Person",
-      "name": "Your Name"
+      "name": "Sahil Nesar"
     },
     "url": window.location.origin,
     "image": `${window.location.origin}/images/profile.jpg`
@@ -139,7 +139,7 @@ export const generateStructuredData = {
     "url": window.location.origin,
     "author": {
       "@type": "Person",
-      "name": "Your Name"
+      "name": "Sahil Nesar"
     },
     "potentialAction": {
       "@type": "SearchAction",
@@ -171,12 +171,12 @@ export const generateStructuredData = {
       "dateModified": new Date().toISOString(),
       "author": {
         "@type": "Person",
-        "name": "Your Name",
+        "name": "Sahil Nesar",
         "url": window.location.origin
       },
       "publisher": {
         "@type": "Person",
-        "name": "Your Name",
+        "name": "Sahil Nesar",
         "url": window.location.origin
       },
       "mainEntity": {

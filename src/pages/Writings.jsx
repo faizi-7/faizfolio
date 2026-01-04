@@ -53,14 +53,14 @@ const Writings = () => {
 
   return (
     <>
-      <SEO 
-        title="Writings - Faiz Iqbal"
-        description="Explore my thoughts on design, development, technology, and digital creativity. Insights from a software engineer's perspective on building better digital experiences."
-        keywords="writings, blog, articles, design, development, technology, software engineering, digital creativity, web development"
+      {/* <SEO 
+        title="Writings - Sahil Nesar"
+        description="Thoughts and insights on engineering, technology, and industrial innovation."
+        keywords="engineering, technology, industrial automation, IoT, writings, blog"
         image="/images/profile.jpg"
         type="website"
         structuredData={generateStructuredData.portfolio()}
-      />
+      /> */}
       <div className={styles.writings}>
       <PageTitle 
         title="Writings"

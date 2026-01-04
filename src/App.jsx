@@ -32,7 +32,7 @@ export default function App() {
         </main>
         <Footer />
         <ScrollToTop />
-        <SEOMonitor />
+        {/* <SEOMonitor /> */}
         <Analytics />
       </div>
     </Router>

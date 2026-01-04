@@ -1,53 +1,47 @@
 {
     "defaults": {
-        "titleTemplate": "%s - Faiz Iqbal",
-        "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination.",
+        "titleTemplate": "%s - Sahil Nesar",
+        "description": "Sahil Nesar — Electrical Engineer with expertise in high-voltage systems, IoT, and industrial automation. Technical Sales Support at Siemens Energy.",
         "keywords": [
-            "Faiz Iqbal",
-            "software engineer",
-            "web developer",
-            "digital creative",
-            "portfolio",
-            "react",
-            "javascript",
-            "frontend developer",
-            "UI/UX design"
+            "Sahil Nesar",
+            "Electrical Engineer",
+            "Technical Sales Support",
+            "Siemens Energy",
+            "IoT",
+            "Industrial Automation",
+            "Portfolio",
+            "Engineering"
         ],
         "image": "/images/profile.jpg",
         "type": "website"
     },
     "pages": {
         "home": {
-            "title": "Faiz Iqbal - Software Engineer & Digital Creative",
-            "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination."
+            "title": "Sahil Nesar - Electrical Engineer & Technical Sales Support",
+            "description": "Sahil Nesar — Electrical Engineer with expertise in high-voltage systems, IoT, and industrial automation. Technical Sales Support at Siemens Energy."
         },
         "writings": {
             "title": "Writings",
-            "description": "Explore my thoughts on design, development, technology, and digital creativity. Insights from a software engineer's perspective on building better digital experiences.",
+            "description": "Thoughts and insights on engineering, technology, and industrial innovation.",
             "keywords": [
-                "writings",
-                "blog",
-                "articles",
-                "design",
-                "development",
+                "engineering",
                 "technology",
-                "software engineering",
-                "digital creativity",
-                "web development"
+                "industrial automation",
+                "IoT",
+                "writings",
+                "blog"
             ]
         },
         "connect": {
             "title": "Connect",
-            "description": "Let's build something together! Connect with me on social media, GitHub, or send me an email. I'm always interested in collaborating on interesting projects.",
+            "description": "Get in touch for collaborations, opportunities, or just to say hi.",
             "keywords": [
                 "contact",
                 "connect",
                 "collaboration",
-                "social media",
-                "github",
                 "email",
                 "networking",
-                "software engineer contact"
+                "Sahil Nesar contact"
             ]
         }
     }

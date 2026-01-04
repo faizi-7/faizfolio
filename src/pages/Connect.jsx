@@ -53,18 +53,18 @@ const Connect = () => {
       setSiteConfig(config)
     }
     loadData()
-  }, [])
+  }, [])  
 
   return (
     <>
-      <SEO
-        title="Connect - Faiz Iqbal"
-        description="Let's build something together! Connect with me on social media, GitHub, or send me an email. I'm always interested in collaborating on interesting projects."
-        keywords="contact, connect, collaboration, social media, github, email, networking, software engineer contact"
+      {/* <SEO
+        title="Connect - Sahil Nesar"
+        description="Get in touch for collaborations, opportunities, or just to say hi."
+        keywords="contact, connect, collaboration, email, networking, Sahil Nesar contact"
         image="/images/profile.jpg"
         type="website"
         structuredData={generateStructuredData.person()}
-      />
+      /> */}
       <div className={styles.connect}>
         <PageTitle
           title="Connect"
