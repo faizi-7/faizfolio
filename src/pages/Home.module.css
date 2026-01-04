@@ -1,7 +1,7 @@
 .home {
   padding-top: var(--spacing-lg);
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; Removed to prevent cropping of hero elements */
 }
 
 @keyframes floatBackground {
@@ -299,7 +299,7 @@
 }
 
 .timelineItem:hover {
-  transform: translateX(8px);
+  transform: scale(1.02);
   border-color: var(--accent-color);
   box-shadow: 0 4px 16px var(--shadow-medium);
 }
