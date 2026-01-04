@@ -172,7 +172,6 @@ const Home = () => {
                 ))}
                 {hero?.bio?.ending}
               </p>
-              <RotatingPhrases phrases={rotatingPhrases} />
             </div>
           </div>
         </section>
