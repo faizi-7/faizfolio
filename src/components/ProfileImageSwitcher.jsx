@@ -4,11 +4,7 @@ import styles from './ProfileImageSwitcher.module.css'
 
 const ProfileImageSwitcher = () => {
   const profileImages = [
-    '/images/profile4.jpg',
-    '/images/profile.jpg',
     '/images/profile1.jpg',
-    '/images/profile2.jpg',
-    '/images/profile3.jpg'
   ]
 
   const [currentImageIndex, setCurrentImageIndex] = useState(0)

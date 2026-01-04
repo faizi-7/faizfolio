@@ -4,8 +4,23 @@
     "institution": "Jamia Millia Islamia, New Delhi",
     "period": "Dec 2020 - Jun 2024",
     "points": [
-      "Final Grade: 3.78",
-      "EQF Level: 6"
+      "Final Grade: 3.78"
+    ]
+  },
+  {
+    "degree": "Intermediate of Science",
+    "institution": "Patna Muslim High School +2",
+    "period": "2018 - 2020",
+    "points": [
+      "Final Grade: 86.8 %"
+    ]
+  },
+  {
+    "degree": "Matriculation",
+    "institution": "R.G.N Public School",
+    "period": "2016 - 2018",
+    "points": [
+      "Final Grade: 89.8 %"
     ]
   }
 ]

@@ -1,20 +1,6 @@
 {
     "links": [
         {
-            "name": "GitHub",
-            "url": "https://github.com/faizi-7",
-            "icon": "github",
-            "showInFooter": true,
-            "showInConnect": true
-        },
-        {
-            "name": "X (Twitter)",
-            "url": "https://x.com/ifaiz710",
-            "icon": "twitter",
-            "showInFooter": true,
-            "showInConnect": true
-        },
-        {
             "name": "Instagram",
             "url": "https://www.instagram.com/sahil_nesar/",
             "icon": "instagram",
@@ -30,7 +16,7 @@
         },
         {
             "name": "Email",
-            "url": "mailto:faiziqbal733@gmail.com",
+            "url": "mailto:sahilnesar00@gmail.com",
             "icon": "email",
             "showInFooter": true,
             "showInConnect": true

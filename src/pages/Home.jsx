@@ -142,7 +142,7 @@ const Home = () => {
               <div className={styles.heroText}>
                 <div className={styles.statusPill}>
                   <span className={styles.statusDot}></span>
-                  Currently building cool stuff
+                  Currently learning cool stuff
                 </div>
                 <h1 className={styles.name}>
                   <span className={styles.greyText}>{hero?.greeting?.prefix}</span>

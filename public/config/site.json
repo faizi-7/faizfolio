@@ -6,20 +6,16 @@
             "prefix": "Hey, I'm",
             "name": "Sahil Nesar"
         },
-        "tagline": "Passionate about <b>Energy Transition</b>, <b>Climate Change</b>, and <b>Sustainability</b>.",
+        "tagline": "Electrical Engineer.",
         "bio": {
-            "intro": "I integrate",
+            "intro": "Passionate about ",
             "skills": [
-                "technical expertise",
-                "sales strategy",
-                "innovation"
+                "Energy Transition",
+                "Climate Change and",
+                "Sustainability"
             ],
-            "middle": "to drive projects that are",
-            "highlights": [
-                "efficient",
-                "compliant",
-                "impactful"
-            ],
+            "middle": "",
+            "highlights": [],
             "ending": "."
         }
     },
