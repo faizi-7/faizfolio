@@ -97,7 +97,7 @@ const Footer = () => {
             <p className={styles.credit}>
               Designed & Developed by{' '}
               <a
-                href="https://ifaiz.in"
+                href="https://github.com/faizi-7/faizfolio"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.author}
