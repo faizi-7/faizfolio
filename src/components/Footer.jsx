@@ -61,18 +61,8 @@ const Footer = () => {
   }, [siteConfig.timezone])
 
   // Generate footer text from config templates
-  const getTimeMessage = () => {
-    const template = siteConfig.footer?.timeMessage || "It's {time} in {location}. Thanks for stopping by."
-    return template
-      .replace('{time}', currentTime)
-      .replace('{location}', siteConfig.location || 'India')
-  }
-
-  const getCopyrightText = () => {
-    const template = siteConfig.footer?.copyrightText || "© {year} {name}"
-    return template
-      .replace('{year}', new Date().getFullYear())
-      .replace('{name}', siteConfig.name || 'Faiz Iqbal')
+  const getCreditText = () => {
+    return 'Designed & Developed by ' + (siteConfig.name || 'Faiz Iqbal')
   }
 
   return (
@@ -103,27 +93,9 @@ const Footer = () => {
           </div>
 
           <div className={styles.bottom}>
-            <p className={styles.copyright}>
-              {getCopyrightText()}
+            <p className={styles.credit}>
+              Designed & Developed by <span className={styles.author}>{siteConfig.name || 'Faiz Iqbal'}</span>
             </p>
-            {siteConfig.footer?.showTime !== false && (
-              <p className={styles.madeWith}>
-                {getTimeMessage()}
-              </p>
-            )}
-            {siteConfig.footer?.credit && (
-              <p className={styles.credit}>
-                {siteConfig.footer.credit.text}{' '}
-                <a
-                  href={siteConfig.footer.credit.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className={styles.creditLink}
-                >
-                  {siteConfig.footer.credit.author}
-                </a>
-              </p>
-            )}
           </div>
         </div>
       </div>
