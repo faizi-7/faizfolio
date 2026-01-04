@@ -16,21 +16,14 @@
         },
         {
             "name": "Instagram",
-            "url": "https://www.instagram.com/faiz_iqbal7",
+            "url": "https://www.instagram.com/sahil_nesar/",
             "icon": "instagram",
             "showInFooter": false,
             "showInConnect": true
         },
         {
-            "name": "YouTube",
-            "url": "https://www.youtube.com/@faizxcreates",
-            "icon": "youtube",
-            "showInFooter": false,
-            "showInConnect": true
-        },
-        {
             "name": "LinkedIn",
-            "url": "https://www.linkedin.com/in/ifaiz7/",
+            "url": "https://www.linkedin.com/in/sahil-nesar/",
             "icon": "linkedin",
             "showInFooter": true,
             "showInConnect": true

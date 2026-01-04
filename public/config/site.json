@@ -1,24 +1,24 @@
 {
-    "name": "Faiz Iqbal",
-    "headline": "Software Engineer & Digital Creative",
+    "name": "Sahil Nesar",
+    "headline": "Electrical Engineer",
     "hero": {
         "greeting": {
             "prefix": "Hey, I'm",
-            "name": "Faiz Iqbal"
+            "name": "Sahil Nesar"
         },
-        "tagline": "I never could get the hang of <b>Mondays</b>.",
+        "tagline": "Passionate about <b>Energy Transition</b>, <b>Climate Change</b>, and <b>Sustainability</b>.",
         "bio": {
-            "intro": "I build things with",
+            "intro": "I integrate",
             "skills": [
-                "code",
-                "words",
-                "pixels"
+                "technical expertise",
+                "sales strategy",
+                "innovation"
             ],
-            "middle": "and pretend it all makes sense. It doesn't. But it",
+            "middle": "to drive projects that are",
             "highlights": [
-                "looks good",
-                "runs fast",
-                "solves real problems"
+                "efficient",
+                "compliant",
+                "impactful"
             ],
             "ending": "."
         }
@@ -29,11 +29,11 @@
             "icon": "/assets/icons/experience.svg"
         },
         "projects": {
-            "title": "Selected Projects",
+            "title": "Projects",
             "icon": "/assets/icons/projects.svg",
             "categories": {
                 "freelance": "Freelance Work",
-                "personal": "Personal Projects"
+                "personal": "Academic & Personal Projects"
             }
         },
         "education": {
@@ -43,21 +43,15 @@
         "reflections": {
             "title": "Reflections",
             "icon": "/assets/icons/reflections.svg"
-        }
-    },
-    "footer": {
-        "showTime": true,
-        "timeMessage": "It's {time} in India. Thanks for stopping by.",
-        "copyrightText": "© {year} {name}",
-        "credit": {
-            "text": "Designed & Developed by",
-            "author": "Faiz Iqbal",
-            "url": "https://ifaiz.in"
+        },
+        "certifications": {
+            "title": "Certifications & Awards",
+            "icon": "/assets/icons/certificate.svg"
         }
     },
     "timezone": "Asia/Kolkata",
-    "location": "India",
-    "email": "faiziqbal733@gmail.com",
+    "location": "Gaya, India",
+    "email": "sahilnesar00@gmail.com",
     "resumePath": "/resume.pdf",
     "images": {
         "profile": "/images/profile.jpg",
@@ -65,14 +59,15 @@
         "accentLine": "/assets/sribbles/line.svg"
     },
     "seo": {
-        "title": "Faiz Iqbal - Software Engineer & Digital Creative",
-        "description": "Faiz Iqbal — I craft ideas into code, words, and visuals. Building thoughtful, lasting work at the intersection of logic and imagination.",
+        "title": "Sahil Nesar - Electrical Engineer",
+        "description": "Sahil Nesar - Electrical Engineer specializing in High-Voltage Systems, PLC Programming, and Technical Sales Support.",
         "keywords": [
-            "Faiz Iqbal",
-            "software engineer",
-            "web developer",
-            "digital creative",
-            "portfolio"
+            "Sahil Nesar",
+            "Electrical Engineer",
+            "Siemens Energy",
+            "Technical Sales",
+            "PLC Programming",
+            "High Voltage"
         ]
     }
 }

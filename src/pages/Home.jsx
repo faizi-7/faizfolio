@@ -13,6 +13,7 @@ import {
   loadStatus,
   loadThoughts,
   loadSiteConfig,
+  loadCertifications,
 } from "../utils/contentLoader";
 
 const Home = () => {
@@ -29,6 +30,8 @@ const Home = () => {
   const [touchStart, setTouchStart] = useState(null);
   const [touchEnd, setTouchEnd] = useState(null);
 
+  const [certifications, setCertifications] = useState([]);
+
   useEffect(() => {
     const loadAllContent = async () => {
       try {
@@ -39,6 +42,7 @@ const Home = () => {
           educationData,
           statusData,
           reflectionsData,
+          certificationsData,
         ] = await Promise.all([
           loadSiteConfig(),
           loadExperience(),
@@ -46,6 +50,7 @@ const Home = () => {
           loadEducation(),
           loadStatus(),
           loadThoughts(),
+          loadCertifications(),
         ]);
 
         setSiteConfig(config);
@@ -54,6 +59,7 @@ const Home = () => {
         setEducation(educationData);
         setReflections(reflectionsData);
         setRotatingPhrases(statusData);
+        setCertifications(certificationsData);
       } catch (error) {
         console.error("Error loading content:", error);
       }
@@ -307,6 +313,31 @@ const Home = () => {
                       </li>
                     ))}
                   </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={`${styles.section} reveal`}>
+          <div className={styles.sectionHeader}>
+            <img src="/assets/icons/certificate.svg" alt="" className={styles.sectionIcon} />
+            <h2 className={styles.sectionTitle}>{sections?.certifications?.title || "Certifications & Awards"}</h2>
+          </div>
+          <div className={styles.timeline}>
+            {certifications.map((cert, index) => (
+              <div key={index} className={styles.timelineItem}>
+                <div className={styles.timelineContent}>
+                  <div className={styles.timelineHeader}>
+                    <h3 className={styles.timelineTitle}>{cert.title}</h3>
+                    <span className={styles.timelinePeriod}>{cert.date}</span>
+                  </div>
+                  <p className={styles.timelineCompany}>{cert.issuer}</p>
+                  {cert.description && (
+                    <ul className={styles.timelinePoints}>
+                      <li className={styles.timelinePoint}>{cert.description}</li>
+                    </ul>
+                  )}
                 </div>
               </div>
             ))}

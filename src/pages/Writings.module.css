@@ -1,6 +1,6 @@
 .writings {
   padding: 2rem 0;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -11,24 +11,51 @@
 }
 
 .writingsList {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 2rem;
+  margin-top: 2rem;
 }
 
 .writingCard {
-  padding: 2rem 0;
-  border-bottom: 1px solid var(--border-color);
+  padding: 2rem;
+  background: var(--background-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--shadow-light);
 }
 
 .writingCard:hover {
-  transform: translateX(0.5rem);
+  transform: translateY(-5px);
+  border-color: var(--accent-color);
+  box-shadow: 0 8px 24px var(--shadow-medium);
+}
+
+.writingCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-color);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.writingCard:hover::before {
+  opacity: 1;
 }
 
 .writingCard:last-child {
-  border-bottom: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .date {

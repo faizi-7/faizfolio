@@ -1,8 +1,8 @@
 import { Link, useLocation } from 'react-router-dom'
 import { useState, useEffect } from 'react'
-import { loadNavigation } from '../utils/contentLoader'
+import { loadNavigation, loadSiteConfig } from '../utils/contentLoader'
 import styles from './Navigation.module.css'
-import logo from '../assets/logo.png'
+// Logo import removed as we are using text
 import {
   HiHome,
   HiPencilAlt,
@@ -26,11 +26,16 @@ const Navigation = () => {
   const [isDarkMode, setIsDarkMode] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const [navItems, setNavItems] = useState([])
+  const [siteConfig, setSiteConfig] = useState(null)
 
   useEffect(() => {
     const loadNav = async () => {
-      const items = await loadNavigation()
+      const [items, config] = await Promise.all([
+        loadNavigation(),
+        loadSiteConfig()
+      ])
       setNavItems(items)
+      setSiteConfig(config)
     }
     loadNav()
   }, [])
@@ -82,7 +87,7 @@ const Navigation = () => {
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-          <img src={logo} alt="Faiz Iqbal" className={styles.logoImage} />
+          <span className={styles.logoText}>{siteConfig?.name || "Portfolio"}</span>
         </Link>
 
         <ul className={`${styles.navList} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>

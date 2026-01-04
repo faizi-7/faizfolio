@@ -1,0 +1,154 @@
+Sahil Nesar
+Nationality: Indian
+Phone: (+91) 7542908560
+Email: sahilnesar00@gmail.com
+
+Address: Hamzapur, Sherghati, 824211, Gaya, India
+
+WORK EXPERIENCE
+
+Technical Sales Support | Siemens Energy
+15/07/2024 – 31/12/2025 | Gurugram, India
+
+Manage and deliver 7+ high-voltage substation tenders per month, ensuring technical and commercial compliance
+
+Prepare proposals valued between $2M to $35M, tailored to diverse client requirements across regions
+
+Coordinate with cross-functional teams, customers, and vendors to optimize bid quality, pricing strategy, and submission timelines
+
+Intern | Siemens Energy
+03/07/2023 – 04/08/2023 | Aurangabad, India
+
+Developed HMI for Gas Insulated Switchgear project; enhanced skills in UI design and PLC programming
+
+Gained hands-on exposure to GIS systems vital in power transmission and industrial automation
+
+Collaborated in innovative solution design for Siemens’ GIS department using industrial tools and technologies
+
+Production Engineer Trainee | C&S Electric Ltd
+01/06/2023 – 01/07/2023 | Haridwar, India
+
+Managed MCB (Miniature Circuit Breaker) plant operations; involved in spot welding and injection molding
+
+Supervised production lines and contributed to quality control and assembly processes
+
+Built expertise in circuit breaker components and manufacturing techniques
+
+Engineer Trainee Intern | Siemens Mobility
+06/06/2022 – 08/08/2022 | Gurugram, India
+
+Worked on Delhi Metro Rail Corporation projects related to signaling systems
+
+Trained on ATP (Automatic Train Protection), ATO, ATC, Interlocking, and Train Control Management
+
+Chanakya UG Fellowship | iHub Divyasampark
+16/08/2022 – 15/05/2023 | Remote, India
+
+Selected for a prestigious 10-month fellowship by Government of India and IIT Roorkee
+
+Built IoT-based Smart Irrigation System to conserve water and improve agriculture efficiency
+
+Managed end-to-end prototype development, stakeholder demos, and documentation
+
+Siemens Mechatronics Training | Siemens
+04/04/2022 – 06/01/2023 | Hybrid, India
+
+Completed Basic and Advanced training in PLC, CNC, and electronics lab tools
+
+Gained hands-on experience with FESTO, DIGIKIT, and TIA Portal V16
+
+Trained in pneumatic systems, electrical schematics, troubleshooting, and 3D printing
+
+EDUCATION
+
+Bachelor of Technology in Electrical Engineering | Jamia Millia Islamia
+14/12/2020 – 30/06/2024 | New Delhi, India
+Final Grade: 3.78
+EQF Level: 6
+
+LANGUAGE SKILLS
+
+Mother Tongue: Urdu, Hindi
+
+English
+Listening: C2
+Reading: C2
+Spoken Production: C2
+Spoken Interaction: C2
+Writing: C2
+
+HONOURS AND AWARDS
+
+Siemens Scholar | Siemens
+
+Selected among 200 students across India in a dual-education model program
+
+Aspire Leaders Program | Aspire Institute
+
+Finalist, academic initiative by HarvardX with participants from 150+ countries
+
+Schneider Global Student Experience | Schneider Electric
+
+Selected participant for 2023 program
+
+Student Energy Summit | Student Energy
+
+Selected for World’s Largest Student Energy Summit, Abu Dhabi, November 2023
+
+Unable to attend due to examination schedule
+
+PROJECTS
+
+Energy Harvesting Using Piezoelectric
+
+Simulated a piezoelectric sensor-based energy harvesting tile converting mechanical pressure and vibrations into electrical energy
+
+Engineered a complete power management circuit including piezobender, full-wave bridge rectifier, and buck converter
+
+Developed a Simulink model to analyze performance under different vibration sources
+
+Validated conversion of mechanical energy to usable electrical power
+
+Proposed future integration with machine learning, smart grids, gesture controls, and wearable electronics
+
+PLC Simulated Smart Room Control
+
+Designed and simulated a smart room control system using Siemens TIA Portal V16 and S7 PLCSIM V16
+
+Implemented ladder logic for automated AC and fan control
+
+Used TON timers, TP timers, and SR flip-flops for precise control
+
+Conducted financial analysis based on Indian tariff rates (6.19 Rs/KWh)
+
+Demonstrated cost savings of 835.65 Rs/day for AC and 2.78 Rs/day for fan
+
+Focused on energy efficiency and sustainability
+
+VOLUNTEERING
+
+Volunteer | HumanHood Organization
+04/07/2018 – Current
+
+Volunteer | BloodConnect Foundation
+02/05/2022 – 28/10/2022
+
+Volunteer
+08/06/2020 – 02/04/2021
+
+Founded a student-led group during COVID-19 to share verified information on oxygen, hospital beds, and medicines
+
+Coordinated with volunteers and digital platforms for real-time data sharing
+
+Assisted communities in accessing critical health resources
+
+SKILLS
+
+Technical Skills
+High-Voltage Systems, PLC Programming (TIA Portal V16), HMI Development, IoT System Architecture, Electrical Schematics, Production and Quality Control
+
+Software and Tools
+FESTO, DIGIKIT, C++, HTML/CSS, AutoCAD
+
+Soft Skills
+Technical and Commercial Compliance, Cross-Functional Coordination, Stakeholder Management, Global Energy Perspective, Innovative Problem-Solving

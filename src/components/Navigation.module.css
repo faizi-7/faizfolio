@@ -59,21 +59,18 @@
   transition: opacity 0.2s ease;
 }
 
-.logo:hover {
+.logoText {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+  font-family: var(--font-heading);
+
+
   opacity: 0.8;
 }
 
-.logoImage {
-  height: 40px;
-  width: auto;
-  border-radius: 6px;
-  transition: filter 0.2s ease;
-}
 
-/* Dark mode logo filter */
-[data-theme="dark"] .logoImage {
-  filter: brightness(0) invert(1);
-}
 
 /* Navigation List */
 .navList {
@@ -269,8 +266,8 @@
     padding: 0 var(--spacing-sm);
   }
 
-  .logoImage {
-    height: 32px;
+  .logoText {
+    font-size: 1.25rem;
   }
 
   .mobileMenuToggle {

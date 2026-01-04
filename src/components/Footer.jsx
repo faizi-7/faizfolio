@@ -62,7 +62,7 @@ const Footer = () => {
 
   // Generate footer text from config templates
   const getCreditText = () => {
-    return 'Designed & Developed by ' + (siteConfig.name || 'Faiz Iqbal')
+    return 'Designed & Developed by ' + ('Faiz Iqbal')
   }
 
   return (
@@ -94,7 +94,15 @@ const Footer = () => {
 
           <div className={styles.bottom}>
             <p className={styles.credit}>
-              Designed & Developed by <span className={styles.author}>{siteConfig.name || 'Faiz Iqbal'}</span>
+              Designed & Developed by{' '}
+              <a
+                href="https://ifaiz.in"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.author}
+              >
+                Faiz Iqbal
+              </a>
             </p>
           </div>
         </div>

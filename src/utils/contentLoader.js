@@ -118,6 +118,19 @@ export const loadThoughts = async () => {
   }
 }
 
+export const loadCertifications = async () => {
+  try {
+    const response = await fetch('/content/certifications.json')
+    if (!response.ok) {
+      throw new Error('Failed to fetch certifications data')
+    }
+    return await response.json()
+  } catch (error) {
+    console.error('Error loading certifications data:', error)
+    return []
+  }
+}
+
 // ============================================
 // Configuration Loaders
 // ============================================

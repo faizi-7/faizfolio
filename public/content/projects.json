@@ -1,81 +1,27 @@
 {
-  "freelance": [
-    {
-      "title": "Point Click Tourism",
-      "description": [
-        "Complete travel booking platform for Dubai-based company",
-        "Admin panel with Stripe payment integration",
-        "Email notifications and booking modules",
-        "Hotel, transport, and tour booking features"
-      ],
-      "tech": ["React", "Node.js", "Express", "MongoDB", "Stripe", "Nodemailer", "CSS Modules"],
-      "link": "https://pointclicktourism.com"
-    },
-    {
-      "title": "CosloMart B2B Backend",
-      "description": [
-        "Backend system for a B2B eCommerce platform with subscription model",
-        "Designed scalable APIs and data models for buyers, sellers, and admin roles",
-        "Implemented order workflows, authentication, and secure business logic"
-      ],
-      "tech": ["Node.js", "Express", "MongoDB", "JWT", "REST API"],
-      "link": "https://coslomart.com"
-    },
-    {
-      "title": "Penn-Womanity NGO Website",
-      "description": [
-        "Designed responsive UI for a women empowerment NGO website",
-        "Focused on storytelling, trust-building, and mobile accessibility",
-        "Delivered polished mockups and design assets using Figma"
-      ],
-      "tech": ["Figma", "Responsive Web Design"],
-      "link": "https://www.penn-womanity.com/"
-    }
-  ],
+  "freelance": [],
   "personal": [
     {
-      "title": "Eyedea: Share Ideas, Find Support",
+      "title": "Energy Harvesting Using Piezoelectric",
       "description": [
-        "Full-stack idea sharing platform",
-        "Markdown support & nested comments",
-        "User profiles with secure JWT auth",
-        "Modern TypeScript implementation"
+        "Simulated a piezoelectric sensor-based energy harvesting tile converting mechanical pressure and vibrations into electrical energy.",
+        "Engineered a complete power management circuit including piezobender, full-wave bridge rectifier, and buck converter.",
+        "Developed a Simulink model to analyze performance under different vibration sources.",
+        "Validated conversion of mechanical energy to usable electrical power."
       ],
-      "tech": ["TypeScript", "React JS", "Node JS", "REST API", "MongoDB", "JWT Auth", "CSS Modules"],
-      "link": "https://github.com/faizi-7/graveyard-front"
+      "tech": ["Piezoelectric Sensor", "Simulink", "Power Electronics"],
+      "link": "#"
     },
     {
-      "title": "AttendEase Attendance Tracker",
+      "title": "PLC Simulated Smart Room Control",
       "description": [
-        "RFID-based attendance tracking system",
-        "React web app with Firebase backend",
-        "Real-time logs and PDF export",
-        "Automated attendance calculation"
+        "Designed and simulated a smart room control system using Siemens TIA Portal V16 and S7 PLCSIM V16.",
+        "Implemented ladder logic for automated AC and fan control using TON timers, TP timers, and SR flip-flops.",
+        "Conducted financial analysis demonstrating significant cost savings.",
+        "Focused on energy efficiency and sustainability."
       ],
-      "tech": ["React JS", "Firebase", "Arduino", "ESP8266", "RFID"],
-      "link": "https://github.com/faizi-7/Attendance-Tracker"
-    },
-    {
-      "title": "TCS Status Tracker",
-      "description": [
-        "Application status tracking web app",
-        "Data visualization using Recharts",
-        "TypeScript for type safety",
-        "Deployed on Vercel"
-      ],
-      "tech": ["TypeScript", "React", "Recharts", "Vercel"],
-      "link": "https://github.com/faizi-7/tcs-tracker"
-    },
-    {
-      "title": "Instashop E-commerce",
-      "description": [
-        "Demo e-commerce application",
-        "Product listing and cart features",
-        "Checkout functionality",
-        "Full-stack implementation"
-      ],
-      "tech": ["React", "Node.js", "MongoDB", "Express"],
-      "link": "https://github.com/faizi-7/instashop"
+      "tech": ["PLC", "TIA Portal V16", "Ladder Logic", "Automation"],
+      "link": "#"
     }
   ]
 }
