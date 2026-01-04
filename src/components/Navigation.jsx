@@ -87,7 +87,7 @@ const Navigation = () => {
     <nav className={`${styles.nav} ${isScrolled ? styles.scrolled : ''}`}>
       <div className={styles.container}>
         <Link to="/" className={styles.logo} onClick={closeMobileMenu}>
-          <span className={styles.logoText}>{siteConfig?.name || "Portfolio"}</span>
+          <span className={styles.logoText}>{siteConfig?.name || "Sahil Nesar"}</span>
         </Link>
 
         <ul className={`${styles.navList} ${isMobileMenuOpen ? styles.mobileOpen : ''}`}>
