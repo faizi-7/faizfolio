@@ -134,6 +134,10 @@ const Home = () => {
 
             <div className={styles.heroContent}>
               <div className={styles.heroText}>
+                <div className={styles.statusPill}>
+                  <span className={styles.statusDot}></span>
+                  Currently building cool stuff
+                </div>
                 <h1 className={styles.name}>
                   <span className={styles.greyText}>{hero?.greeting?.prefix}</span>
                   <span className={styles.blackText}>
