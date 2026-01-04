@@ -6,13 +6,13 @@ export const useSEO = (seoData = {}) => {
   const location = useLocation()
   
   const defaultSEO = {
-    title: 'Faiz Iqbal - Code , Write & Design',
-    description: 'Faiz Iqbal is a Software Engineer and Digital Creative who builds thoughtful digital experiences. Explore his portfolio, writings, and projects.',
-    keywords: 'Faiz Iqbal, Faiz, Ifaiz, software engineer, web developer, portfolio, react, javascript, design, programming, creative, data, engineer, writer, Faiz Iqbal portfolio',
+    title: 'Portfolio',
+    description: 'A personal portfolio website.',
+    keywords: 'portfolio, resume, projects, web developer',
     image: '/images/profile.jpg',
     type: 'website',
-    url: `https://ifaiz.in${location.pathname}`,
-    site_name: 'Faiz Iqbal',
+    url: window.location.href,
+    site_name: 'Portfolio',
     locale: 'en_US'
   }
 
@@ -96,37 +96,25 @@ export const generateStructuredData = {
   person: () => ({
     "@context": "https://schema.org",
     "@type": "Person",
-    "name": "Faiz Iqbal",
-    "jobTitle": "Software Engineer",
-    "description": "Software Engineer and Digital Creative specializing in web development and design",
-    "url": "https://ifaiz.in",
-    "image": "https://ifaiz.in/images/profile.jpg",
-    "sameAs": [
-      "https://github.com/faizi-7",
-      "https://www.linkedin.com/in/ifaiz7",
-      "https://x.com/ifaiz710"
-    ],
-    "knowsAbout": [
-      "Software Engineering",
-      "Web Development",
-      "React",
-      "JavaScript",
-      "UI/UX Design",
-      "Writing"
-    ]
+    "name": "Your Name",
+    "jobTitle": "Job Title",
+    "description": "Short bio",
+    "url": window.location.origin,
+    "image": `${window.location.origin}/images/profile.jpg`,
+    "sameAs": []
   }),
 
   portfolio: () => ({
     "@context": "https://schema.org",
     "@type": "CreativeWork",
-    "name": "Faiz Iqbal Portfolio",
-    "description": "Portfolio showcasing software engineering projects, writings, and creative works",
+    "name": "Portfolio",
+    "description": "My Portfolio",
     "author": {
       "@type": "Person",
-      "name": "Faiz Iqbal"
+      "name": "Your Name"
     },
-    "url": "https://ifaiz.in",
-    "image": "https://ifaiz.in/images/profile.jpg"
+    "url": window.location.origin,
+    "image": `${window.location.origin}/images/profile.jpg`
   }),
 
   article: (title, description, datePublished, dateModified) => ({
@@ -136,28 +124,28 @@ export const generateStructuredData = {
     "description": description,
     "author": {
       "@type": "Person",
-      "name": "Faiz Iqbal"
+      "name": "Your Name"
     },
     "datePublished": datePublished,
     "dateModified": dateModified || datePublished,
-    "image": "https://ifaiz.in/images/profile.jpg"
+    "image": `${window.location.origin}/images/profile.jpg`
   }),
 
   website: () => ({
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "Faiz Iqbal Portfolio",
-    "description": "Portfolio of Faiz Iqbal - Software Engineer and Digital Creative",
-    "url": "https://ifaiz.in",
+    "name": "Portfolio",
+    "description": "Personal Portfolio",
+    "url": window.location.origin,
     "author": {
       "@type": "Person",
-      "name": "Faiz Iqbal"
+      "name": "Your Name"
     },
     "potentialAction": {
       "@type": "SearchAction",
       "target": {
         "@type": "EntryPoint",
-        "urlTemplate": "https://ifaiz.in/search?q={search_term_string}"
+        "urlTemplate": `${window.location.origin}/search?q={search_term_string}`
       },
       "query-input": "required name=search_term_string"
     }
@@ -165,12 +153,11 @@ export const generateStructuredData = {
   bookNotesArticle: ({ pageUrl, pageTitle, description, imageUrl, bookData }) => ({
     "@context": "https://schema.org",
     "@type": "Book",
-    "name": "The 48 Laws of Power",
+    "name": "Book Title",
     "author": {
       "@type": "Person",
-      "name": "Robert Greene"
+      "name": "Author Name"
     },
-    // The "workExample" property connects your article to the book it's about.
     "workExample": { 
       "@type": "Article",
       "mainEntityOfPage": {
@@ -180,31 +167,23 @@ export const generateStructuredData = {
       "headline": pageTitle,
       "description": description,
       "image": imageUrl,
-      "datePublished": "2025-07-21T23:30:00+05:30", // Set the publish date
-      "dateModified": "2025-07-21T23:30:00+05:30", // Set the last modified date
+      "datePublished": new Date().toISOString(),
+      "dateModified": new Date().toISOString(),
       "author": {
         "@type": "Person",
-        "name": "Faiz Iqbal",
-        "url": "https://ifaiz.in"
+        "name": "Your Name",
+        "url": window.location.origin
       },
       "publisher": {
         "@type": "Person",
-        "name": "Faiz Iqbal",
-        "url": "https://ifaiz.in"
+        "name": "Your Name",
+        "url": window.location.origin
       },
-      // The "mainEntity" is the list of laws, marking it as the core content.
       "mainEntity": {
         "@type": "ItemList",
-        "name": "The 48 Laws of Power: Table of Contents",
-        "description": "A complete list of all 48 laws with links to each summary.",
-        "itemListElement": bookData.laws.map((law, index) => ({
-          "@type": "ListItem",
-          "position": index + 1,
-          "name": law.title,
-          "description": law.main_idea,
-          // This URL links each list item to the corresponding section on your page.
-          "url": `${pageUrl}#law-${law.law_number}` 
-        }))
+        "name": "Table of Contents",
+        "description": "List of chapters",
+        "itemListElement": []
       }
     }
   })

@@ -11,8 +11,8 @@
             "intro": "Passionate about ",
             "skills": [
                 "Energy Transition",
-                "Climate Change and",
-                "Sustainability"
+                "Climate Change",
+                "and Sustainability"
             ],
             "middle": "",
             "highlights": [],
@@ -55,15 +55,12 @@
         "accentLine": "/assets/sribbles/line.svg"
     },
     "seo": {
-        "title": "Sahil Nesar - Electrical Engineer",
-        "description": "Sahil Nesar - Electrical Engineer specializing in High-Voltage Systems, PLC Programming, and Technical Sales Support.",
+        "title": "Portfolio",
+        "description": "A personal portfolio website.",
         "keywords": [
-            "Sahil Nesar",
-            "Electrical Engineer",
-            "Siemens Energy",
-            "Technical Sales",
-            "PLC Programming",
-            "High Voltage"
+            "Portfolio",
+            "Resume",
+            "Projects"
         ]
     }
 }
